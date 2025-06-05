@@ -1,17 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mailchimp Embedded Form</title>
+  <title>Easy Form</title>
 	
 	<!-- Load Urbanist font from Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-	<style>
-  /* Apply Urbanist font to the entire document */
+<style>
   body, input, select, button, label, h2 {
     font-family: 'Urbanist', sans-serif;
+  }
+
+  h2 {
+    font-size: 4vw; /* 🔧 Adjust this size as needed */
+	  line-height: 4vw;
+    font-weight: 900; /* Urbanist Bold for step titles */
+    margin-bottom: 16px; /* Optional: spacing below title */
   }
 </style>
 	
@@ -427,6 +434,43 @@ p {
 	
 	</style>
 
+	
+	<style>
+	
+	#step-image-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 999;
+  padding: 12px 0 8px; /* top and bottom padding */
+  display: flex;
+  justify-content: center;
+  box-shadow: none; /* ❌ Remove the top shadow/line */
+  pointer-events: none; /* ensures buttons are always clickable */
+}
+
+.step-image-wrapper {
+  max-width: 800px;
+  width: 100%;
+  max-height: 25vh;  /* reduce height slightly for better visibility */
+  padding: 0 16px;
+  pointer-events: none;
+}
+
+.step-image {
+  width: 100%;
+  height: auto;
+  max-height: 25vh;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+	
+	
+	</style>
 
 
 
@@ -464,9 +508,16 @@ p {
 Helps us focus on what matters to you: budget, timelines, and technical fit. No fluff. No upsell. Just a clean quote. Enter your email so we can send your upgrade options — nothing else.</p>
 				
 
-            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
+       <!-- 📐 Side-by-side label/input with equal width -->
+<div class="mc-field-group" style="max-width: 400px; margin: 0 auto;">
+  <label for="mce-EMAIL" style="flex: 1; text-align: left;">Email Address <span class="asterisk">*</span></label>
+  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required value="" style="flex: 1;">
+</div>
+
 				
-								            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="indicates-required" style="max-width: 400px; margin: 6px auto 0; text-align: left; font-size: 14px; color: #555;">
+  <span class="asterisk">*</span> indicates required
+</div>
 
 				
 			<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
@@ -736,12 +787,13 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 </form>
 </div>
 	
+<!-- ✅ Replace two <img> tags with one -->
 <div id="step-image-container">
   <div class="step-image-wrapper">
-    <img id="step-image-desktop" src="" alt="" class="step-image desktop-only">
-    <img id="step-image-mobile" src="" alt="" class="step-image mobile-only">
+    <img id="step-image" src="" alt="" class="step-image">
   </div>
 </div>
+
 
 	
 	</div>
@@ -1095,8 +1147,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const backBtns = document.querySelectorAll('.back-btn');
   const submitBtnWrapper = document.getElementById('mc-embedded-subscribe').closest('.clear');
 
-  const stepImageDesktop = document.getElementById('step-image-desktop');
-  const stepImageMobile = document.getElementById('step-image-mobile');
+  const stepImage = document.getElementById('step-image'); // ✅ single image tag
   const emailInput = document.getElementById('mce-EMAIL');
   const invalidEmailModal = document.getElementById('email-invalid-modal');
 
@@ -1125,6 +1176,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let currentStep = 0;
 
+  function updateStepImage() {
+    const current = stepImages[currentStep];
+    if (current && stepImage) {
+      const isMobile = window.innerWidth < 769;
+      stepImage.src = isMobile ? current.mobile : current.desktop;
+    }
+  }
+
   function showStep(index) {
     steps.forEach((step, i) => {
       step.style.display = i === index ? 'block' : 'none';
@@ -1136,11 +1195,7 @@ document.addEventListener('DOMContentLoaded', function () {
       submitBtnWrapper.style.display = 'none';
     }
 
-    const current = stepImages[index];
-    if (current) {
-      stepImageDesktop.src = current.desktop;
-      stepImageMobile.src = current.mobile;
-    }
+    updateStepImage(); // ✅ load image for current step
   }
 
   nextBtns.forEach(btn => {
@@ -1148,7 +1203,6 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentFormStep = steps[currentStep];
       const inputs = currentFormStep.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="hidden"]');
 
-      // ✅ Only check email format on step 0
       if (currentStep === 0) {
         const email = emailInput.value.trim();
         const basicPattern = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
@@ -1160,7 +1214,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const isAnyFilled = Array.from(inputs).some(input => input.value.trim() !== '');
 
-      // ✅ Show modal if nothing is filled
       if (!isAnyFilled && currentStep < steps.length - 1) {
         document.getElementById('incomplete-step-modal').style.display = 'flex';
         return;
@@ -1199,10 +1252,14 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  // ✅ Update image on screen resize
+  window.addEventListener('resize', updateStepImage);
+
   // Show first step on load
   showStep(currentStep);
 });
 </script>
+
 
 
 
