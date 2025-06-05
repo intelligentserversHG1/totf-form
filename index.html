@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Easy Form</title>
+  <title>Mailchimp Embedded Form</title>
 	
 	<!-- Load Urbanist font from Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -505,7 +504,7 @@ p {
 				<h2>Get realistic upgrade options tailored to your infrastructure</h2>
 
 <p><strong>Take 2 minutes to complete this form</strong><br><br>
-Helps us focus on what matters to you: budget, timelines, and technical fit. No fluff. No upsell. Just a clean quote. Enter your email so we can send your upgrade options — nothing else.</p>
+Helps us focus on what matters to you: budget, timelines, and technical fit. No fluff. No upsell. Just tailored advice. Enter your email so we can send your upgrade options — nothing else.</p>
 				
 
        <!-- 📐 Side-by-side label/input with equal width -->
@@ -668,12 +667,10 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Just gathering info">Just gathering info</button>
   </div>
 </div>
-<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
-<button type="button" class="next-btn input-button">Next →</button>
-		 <div>
-    <button type="button" class="back-btn">← Back</button>
-  </div>
-
+<!-- ✅ Vertically stacked nav buttons -->
+<div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+  <button type="button" class="next-btn input-button">Next →</button>
+  <button type="button" class="back-btn">← Back</button>
 </div>
 
 </div>	
@@ -700,12 +697,10 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="All of the above">All of the above</button>
   </div>
 </div>
-<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
-<button type="button" class="next-btn input-button">Next →</button>
-		 <div>
-    <button type="button" class="back-btn">← Back</button>
-  </div>
-
+<!-- ✅ Vertically stacked nav buttons -->
+<div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+  <button type="button" class="next-btn input-button">Next →</button>
+  <button type="button" class="back-btn">← Back</button>
 </div>
 
 </div>
@@ -729,12 +724,10 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Nothing yet - just researching">Nothing yet - just researching</button>
   </div>
 </div>
-<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
-<button type="button" class="next-btn input-button">Next →</button>
-		 <div>
-    <button type="button" class="back-btn">← Back</button>
-  </div>
-
+<!-- ✅ Vertically stacked nav buttons -->
+<div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
+  <button type="button" class="next-btn input-button">Next →</button>
+  <button type="button" class="back-btn">← Back</button>
 </div>
 
 </div>	
@@ -742,9 +735,9 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 			
 <div class="form-step contact-step" style="display: none;">
 	
-	<h2>Just need a few details to complete your quote</h2>
+	<h2>Just need a few details to complete so we can give you ideas and options</h2>
 
-<p><strong>Adding your name, company and number helps us make the quote relevant to your business - not generic</strong></p>
+<p><strong>Adding your name, company and number helps us give suggestion more relevant to your business - not generic</strong></p>
   
   <div class="mc-field-group">
     <label for="mce-MMERGE21">Company Name</label>
@@ -778,7 +771,7 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
   </div>
 
   <div class="clear" style="text-align: center;">
-    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-btn" value="Get a quote">
+    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-btn" value="Get Options">
   </div>
 
 </div>
@@ -961,8 +954,8 @@ document.querySelectorAll('.custom-slider').forEach(slider => {
 <!-- ✳️ Confirmation Modal -->
 <div id="incomplete-modal">
   <div class="modal-box">
-    <h2>More Info Helps Us Quote Better</h2>
-    <p>Some fields are incomplete. We can give a more accurate quote if you answer them. Would you like to continue anyway?</p>
+    <h2>More information helps us to give you better options</h2>
+    <p>Some fields are incomplete. We can tailor your options if you answer them. Would you like to continue anyway?</p>
     <div class="modal-buttons">
       <button id="go-back-btn" class="input-button">Go Back</button>
       <button id="confirm-submit-btn" class="input-button" style="background-color: #53D8D8;">Submit Anyway</button>
@@ -1280,7 +1273,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div id="email-required-modal">
   <div class="modal-box">
     <h2>Email Address Required</h2>
-    <p>We need your email address to send you a copy of your quote. We won't spam you.</p>
+    <p>We need your email address to send you a copy of your options. We won't spam you.</p>
     <div class="modal-buttons">
       <button id="dismiss-email-modal" class="input-button" style="background-color: #53D8D8;">OK</button>
     </div>
@@ -1336,7 +1329,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div id="email-invalid-modal">
   <div class="modal-box">
     <h2>That email doesn’t look quite right</h2>
-    <p>Can you double-check it for us? We need it to send your quote.</p>
+    <p>Can you double-check it for us? We need it to send you tailored options.</p>
     <div class="modal-buttons">
       <button id="dismiss-invalid-email" class="input-button" style="background-color: #53D8D8;">OK</button>
     </div>
@@ -1393,7 +1386,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <!-- ✅ Incomplete Step Modal -->
 <div id="incomplete-step-modal">
   <div class="modal-box">
-    <h2>More Info Helps Us Quote Better</h2>
+    <h2>More information helps us give you better options</h2>
     <p>You haven’t answered this question. Would you like to go back or skip to the next one?</p>
     <div class="modal-buttons">
       <button id="incomplete-back-btn" class="input-button">Go Back</button>
