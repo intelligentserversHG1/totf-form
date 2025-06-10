@@ -3,21 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mailchimp Embedded Form</title>
+  <title>Intelligent Servers - Form</title>
 	
-	<!-- Load Urbanist font from Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700;800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-<style>
+	<style>
+  /* Apply Urbanist font to the entire document */
   body, input, select, button, label, h2 {
     font-family: 'Urbanist', sans-serif;
-  }
-
-  h2 {
-    font-size: 4vw; /* 🔧 Adjust this size as needed */
-	  line-height: 4vw;
-    font-weight: 900; /* Urbanist Bold for step titles */
-    margin-bottom: 16px; /* Optional: spacing below title */
   }
 </style>
 	
@@ -367,7 +360,6 @@ p {
 #incomplete-step-modal h2 {
   font-family: 'Urbanist', sans-serif;
   font-weight: 700;
-	line-height: normal;
   font-size: 24px;
   margin-bottom: 10px;
 }
@@ -434,43 +426,6 @@ p {
 	
 	</style>
 
-	
-	<style>
-	
-	#step-image-container {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: white;
-  z-index: 999;
-  padding: 12px 0 8px; /* top and bottom padding */
-  display: flex;
-  justify-content: center;
-  box-shadow: none; /* ❌ Remove the top shadow/line */
-  pointer-events: none; /* ensures buttons are always clickable */
-}
-
-.step-image-wrapper {
-  max-width: 800px;
-  width: 100%;
-  max-height: 25vh;  /* reduce height slightly for better visibility */
-  padding: 0 16px;
-  pointer-events: none;
-}
-
-.step-image {
-  width: 100%;
-  height: auto;
-  max-height: 25vh;
-  object-fit: contain;
-  display: block;
-  pointer-events: none;
-}
-
-	
-	
-	</style>
 
 
 
@@ -482,15 +437,11 @@ p {
 	<body>
 
 <div id="mc_embed_shell">
-<div class="form-wrapper"> <!-- ✅ Add this wrapper -->  
-<div id="mc_embed_signup">
+<div class="form-wrapper"> <div id="mc_embed_signup">
     <form action="https://intelligentservers.us19.list-manage.com/subscribe/post?u=42786b68c6b1b62fd550ddd76&amp;id=7a18f756af&amp;f_id=00326ee7f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_self" novalidate="">
         <div id="mc_embed_signup_scroll">
 			
-			<!-- ✅ Branded heading block like working-form.html -->
-
-
-<img
+			<img
   src="https://intelligentservers.co.uk/images/thumbs/0027421_intelligent%20servers%20new%20logo.png"
   alt="Intelligent Servers logo"
   style="display: block; margin: 0 auto 24px auto; max-width: 250px; height: auto; border-radius: 12px;">
@@ -505,19 +456,12 @@ p {
 				<h2>Get realistic upgrade options tailored to your infrastructure</h2>
 
 <p><strong>Take 2 minutes to complete this form</strong><br><br>
-Helps us focus on what matters to you: budget, timelines, and technical fit. No fluff. No upsell. Just tailored advice. Enter your email so we can send your upgrade options — nothing else.</p>
+Helps us focus on what matters to you: budget, timelines, and technical fit. No fluff. No upsell. Just a clean quote. Enter your email so we can send your upgrade options — nothing else.</p>
 				
 
-       <!-- 📐 Side-by-side label/input with equal width -->
-<div class="mc-field-group" style="max-width: 400px; margin: 0 auto;">
-  <label for="mce-EMAIL" style="flex: 1; text-align: left;">Email Address <span class="asterisk">*</span></label>
-  <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required value="" style="flex: 1;">
-</div>
-
+            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div>
 				
-<div class="indicates-required" style="max-width: 400px; margin: 6px auto 0; text-align: left; font-size: 14px; color: #555;">
-  <span class="asterisk">*</span> indicates required
-</div>
+								            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 
 				
 			<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
@@ -534,11 +478,8 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 
 	
 <div class="mc-field-group input-group">
-  <!--<label><strong>hat's causing you the biggest headache?</strong></label>-->
-  <!-- Hidden Mailchimp input -->
   <input type="hidden" name="CHALLENGE" id="hidden-CHALLENGE" value="">
   
-  <!-- Custom-styled button options -->
   <div id="challenge-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Long Lead Times & Availability">Long Lead Times & Availability</button>
     <button type="button" class="input-button" data-value="Budget">Budget</button>
@@ -549,7 +490,6 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Something else">Something else</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
 <div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
   <button type="button" class="next-btn input-button">Next →</button>
   <button type="button" class="back-btn">← Back</button>
@@ -566,11 +506,8 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 <p><strong>This helps us understand what you’re optimising for.</strong></p>
 	
 <div class="mc-field-group input-group">
-  <!--<label><strong>Which best describes your current IT focus?</strong></label>->
-  <!-- Hidden input for Mailchimp -->
   <input type="hidden" name="FOCUS" id="hidden-FOCUS" value="">
   
-  <!-- Button UI options -->
   <div id="focus-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Extending life of existing infrastructure">Extending life of existing infrastructure</button>
     <button type="button" class="input-button" data-value="Planning an upgrade or refresh">Planning an upgrade or refresh</button>
@@ -579,7 +516,6 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Just exploring options">Just exploring options</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
 <div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
   <button type="button" class="next-btn input-button">Next →</button>
   <button type="button" class="back-btn">← Back</button>
@@ -596,11 +532,8 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 <p><strong>This helps us focus your recommendations.</strong><</p>
 	
 <div class="mc-field-group input-group">
-  <!--<label><strong>Types of Hardware</strong></label>-->
-  <!-- Hidden input for Mailchimp -->
   <input type="hidden" name="HARDWARE" id="hidden-HARDWARE" value="">
   
-  <!-- Custom-styled button group -->
   <div id="hardware-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Servers">Servers</button>
     <button type="button" class="input-button" data-value="Storage">Storage</button>
@@ -610,7 +543,6 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Other">Other</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
 <div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
   <button type="button" class="next-btn input-button">Next →</button>
   <button type="button" class="back-btn">← Back</button>
@@ -626,11 +558,8 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 
 	<p><strong>Let us know if there’s anything coming up — even if it’s early-stage.</strong></p>
 <div class="mc-field-group input-group">
-  <!--<label><strong>Upcoming Projects</strong></label>-->
-  <!-- Hidden Mailchimp input -->
   <input type="hidden" name="PROJECTS" id="hidden-PROJECTS" value="">
 
-  <!-- Button group -->
   <div id="projects-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Infrastructure refresh">Infrastructure refresh</button>
     <button type="button" class="input-button" data-value="Scaling IT capacity">Scaling IT capacity</button>
@@ -639,7 +568,6 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Nothing Planned">Nothing Planned</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
 <div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
   <button type="button" class="next-btn input-button">Next →</button>
   <button type="button" class="back-btn">← Back</button>
@@ -656,11 +584,8 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 <p><strong>Helps us understand how soon you might need to act — or not.</strong></p>
 	
 <div class="mc-field-group input-group">
-  <!--<label><strong>Decision Date</strong></label>-->
-  <!-- Hidden Mailchimp field -->
   <input type="hidden" name="DECISIONIN" id="hidden-DECISIONIN" value="">
 
-  <!-- Button options -->
   <div id="decision-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Within 1-3 months">Within 1-3 months</button>
     <button type="button" class="input-button" data-value="3-6 months">3-6 months</button>
@@ -668,10 +593,12 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="Just gathering info">Just gathering info</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
-<div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-  <button type="button" class="next-btn input-button">Next →</button>
-  <button type="button" class="back-btn">← Back</button>
+<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
+<button type="button" class="next-btn input-button">Next →</button>
+		 <div>
+    <button type="button" class="back-btn">← Back</button>
+  </div>
+
 </div>
 
 </div>	
@@ -683,11 +610,8 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 
 <p><strong>Helps us prioritise what matters in your recommendation.</strong></p>
 <div class="mc-field-group input-group">
-  <!--<label><strong>What matters most?</strong></label>-->
-  <!-- Hidden Mailchimp input -->
   <input type="hidden" name="MATTERS" id="hidden-MATTERS" value="">
 
-  <!-- Custom button group -->
   <div id="matters-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Price/performance ratio">Price/performance ratio</button>
     <button type="button" class="input-button" data-value="Warranty/support">Warranty/support</button>
@@ -698,10 +622,12 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
     <button type="button" class="input-button" data-value="All of the above">All of the above</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
-<div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-  <button type="button" class="next-btn input-button">Next →</button>
-  <button type="button" class="back-btn">← Back</button>
+<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
+<button type="button" class="next-btn input-button">Next →</button>
+		 <div>
+    <button type="button" class="back-btn">← Back</button>
+  </div>
+
 </div>
 
 </div>
@@ -714,21 +640,20 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 <p><strong>No pressure — just tell us what works best for you.</strong></p>
 	
 <div class="mc-field-group input-group">
-  <!--<label><strong>Call or Not</strong></label>-->
-  <!-- Hidden Mailchimp input -->
   <input type="hidden" name="CALLNOW" id="hidden-CALLNOW" value="">
 
-  <!-- Button option group -->
   <div id="callnow-buttons" class="input-button-group">
     <button type="button" class="input-button" data-value="Yes - I'd like a quick call">Yes - I'd like a quick call</button>
     <button type="button" class="input-button" data-value="An email is fine for now">An email is fine for now</button>
     <button type="button" class="input-button" data-value="Nothing yet - just researching">Nothing yet - just researching</button>
   </div>
 </div>
-<!-- ✅ Vertically stacked nav buttons -->
-<div class="form-nav-buttons" style="margin-top: 24px; display: flex; flex-direction: column; align-items: center; gap: 16px;">
-  <button type="button" class="next-btn input-button">Next →</button>
-  <button type="button" class="back-btn">← Back</button>
+<div class="form-nav-buttons" style="margin-top: 24px; display: flex; justify-content: center; gap: 24px;">
+<button type="button" class="next-btn input-button">Next →</button>
+		 <div>
+    <button type="button" class="back-btn">← Back</button>
+  </div>
+
 </div>
 
 </div>	
@@ -736,9 +661,9 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 			
 <div class="form-step contact-step" style="display: none;">
 	
-	<h2>Just need a few details to complete so we can give you ideas and options</h2>
+	<h2>Just need a few details to complete your quote</h2>
 
-<p><strong>Adding your name, company and number helps us give suggestion more relevant to your business - not generic</strong></p>
+<p><strong>Adding your name, company and number helps us make the quote relevant to your business - not generic</strong></p>
   
   <div class="mc-field-group">
     <label for="mce-MMERGE21">Company Name</label>
@@ -761,7 +686,6 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
   </div>
 
 
-  <!-- Leave submit button untouched -->
   <div id="mce-responses" class="clear">
     <div class="response" id="mce-error-response" style="display: none;"></div>
     <div class="response" id="mce-success-response" style="display: none;"></div>
@@ -772,7 +696,7 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
   </div>
 
   <div class="clear" style="text-align: center;">
-    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-btn" value="Get Options">
+    <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="subscribe-btn" value="Get a quote">
   </div>
 
 </div>
@@ -781,13 +705,12 @@ Helps us focus on what matters to you: budget, timelines, and technical fit. No 
 </form>
 </div>
 	
-<!-- ✅ Replace two <img> tags with one -->
 <div id="step-image-container">
   <div class="step-image-wrapper">
-    <img id="step-image" src="" alt="" class="step-image">
+    <img id="step-image-desktop" src="" alt="" class="step-image desktop-only">
+    <img id="step-image-mobile" src="" alt="" class="step-image mobile-only">
   </div>
 </div>
-
 
 	
 	</div>
@@ -807,7 +730,10 @@ document.querySelectorAll('.input-button-group button').forEach(btn => {
 
     // Activate the corresponding hidden input
     const targetId = btn.getAttribute('data-target');
-    document.getElementById(targetId).checked = true;
+    const targetInput = document.getElementById(targetId);
+    if (targetInput) { // Add a check to ensure targetInput exists
+        targetInput.checked = true;
+    }
 
     // Optional: visual active state
     btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
@@ -820,7 +746,10 @@ document.querySelectorAll('.input-button-group button').forEach(btn => {
 // Attach click events to buttons to update hidden input
 document.querySelectorAll('#server-generation-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE6').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE6');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Optional: visually show active state
     document.querySelectorAll('#server-generation-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -834,7 +763,10 @@ document.querySelectorAll('#server-generation-buttons .input-button').forEach(bt
 // Update hidden input for MMERGE12 based on button click
 document.querySelectorAll('#local-storage-drive-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE12').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE12');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Optional: visual feedback
     document.querySelectorAll('#local-storage-drive-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -847,7 +779,10 @@ document.querySelectorAll('#local-storage-drive-buttons .input-button').forEach(
 // Set value for MMERGE14 when a button is clicked
 document.querySelectorAll('#data-network-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE14').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE14');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Visual feedback
     document.querySelectorAll('#data-network-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -860,7 +795,10 @@ document.querySelectorAll('#data-network-buttons .input-button').forEach(btn => 
 // Update MMERGE15 value on button click
 document.querySelectorAll('#storage-network-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE15').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE15');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Visual state
     document.querySelectorAll('#storage-network-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -873,7 +811,10 @@ document.querySelectorAll('#storage-network-buttons .input-button').forEach(btn 
 // Handle MMERGE18 button selections
 document.querySelectorAll('#das-connectivity-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE18').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE18');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Highlight active selection
     document.querySelectorAll('#das-connectivity-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -886,7 +827,10 @@ document.querySelectorAll('#das-connectivity-buttons .input-button').forEach(btn
 // Update MMERGE20 value based on button click
 document.querySelectorAll('#san-tier1-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE20').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE20');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Show which button is active
     document.querySelectorAll('#san-tier1-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -899,7 +843,10 @@ document.querySelectorAll('#san-tier1-buttons .input-button').forEach(btn => {
 // Handle MMERGE22 button interactions
 document.querySelectorAll('#san-tier2-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE22').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE22');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Visually mark selected button
     document.querySelectorAll('#san-tier2-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -912,7 +859,10 @@ document.querySelectorAll('#san-tier2-buttons .input-button').forEach(btn => {
 // MMERGE24 button logic
 document.querySelectorAll('#san-tier3-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE24').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE24');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Mark active
     document.querySelectorAll('#san-tier3-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -925,7 +875,10 @@ document.querySelectorAll('#san-tier3-buttons .input-button').forEach(btn => {
 // MMERGE26: update hidden field on click
 document.querySelectorAll('#san-connectivity-buttons .input-button').forEach(btn => {
   btn.addEventListener('click', function () {
-    document.getElementById('hidden-MMERGE26').value = this.getAttribute('data-value');
+    const hiddenInput = document.getElementById('hidden-MMERGE26');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
 
     // Set active button
     document.querySelectorAll('#san-connectivity-buttons .input-button').forEach(b => b.classList.remove('active'));
@@ -952,11 +905,10 @@ document.querySelectorAll('.custom-slider').forEach(slider => {
 });
 </script>
 
-<!-- ✳️ Confirmation Modal -->
 <div id="incomplete-modal">
   <div class="modal-box">
-    <h2>More information helps us to give you better options</h2>
-    <p>Some fields are incomplete. We can tailor your options if you answer them. Would you like to continue anyway?</p>
+    <h2>More Info Helps Us Quote Better</h2>
+    <p>Some fields are incomplete. We can give a more accurate quote if you answer them. Would you like to continue anyway?</p>
     <div class="modal-buttons">
       <button id="go-back-btn" class="input-button">Go Back</button>
       <button id="confirm-submit-btn" class="input-button" style="background-color: #53D8D8;">Submit Anyway</button>
@@ -965,34 +917,228 @@ document.querySelectorAll('.custom-slider').forEach(slider => {
 </div>
 
 
+		
+		<script>
+document.querySelectorAll('#challenge-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-CHALLENGE');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Visually indicate selection
+    document.querySelectorAll('#challenge-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+		
+		<script>
+document.querySelectorAll('#focus-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-FOCUS');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Update visual state
+    document.querySelectorAll('#focus-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+		
+<script>
+document.querySelectorAll('#hardware-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-HARDWARE');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Toggle active class
+    document.querySelectorAll('#hardware-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+		
+<script>
+document.querySelectorAll('#projects-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-PROJECTS');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Visual active state
+    document.querySelectorAll('#projects-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+
+<script>
+document.querySelectorAll('#decision-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-DECISIONIN');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Highlight selected
+    document.querySelectorAll('#decision-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+		
+<script>
+document.querySelectorAll('#matters-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-MATTERS');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Update visual active state
+    document.querySelectorAll('#matters-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+		
+<script>
+document.querySelectorAll('#callnow-buttons .input-button').forEach(btn => {
+  btn.addEventListener('click', function () {
+    const hiddenInput = document.getElementById('hidden-CALLNOW');
+    if (hiddenInput) { // Add a check to ensure hiddenInput exists
+      hiddenInput.value = this.getAttribute('data-value');
+    }
+
+    // Update active style
+    document.querySelectorAll('#callnow-buttons .input-button').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+</script>
+		
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+  const steps = Array.from(document.querySelectorAll('.form-step'));
+  const nextBtns = document.querySelectorAll('.next-btn');
+  const backBtns = document.querySelectorAll('.back-btn');
+  const submitBtnWrapper = document.getElementById('mc-embedded-subscribe').closest('.clear');
+
+  const stepImageDesktop = document.getElementById('step-image-desktop');
+  const stepImageMobile = document.getElementById('step-image-mobile');
+  const emailInput = document.getElementById('mce-EMAIL');
+  const emailRequiredModal = document.getElementById('email-required-modal'); // Get the email required modal
+  const invalidEmailModal = document.getElementById('email-invalid-modal');
+  const dismissEmailModal = document.getElementById('dismiss-email-modal'); // Dismiss button for email required modal
+  const dismissInvalidEmail = document.getElementById('dismiss-invalid-email'); // Dismiss button for invalid email modal
+
+  const stepImages = [
+    {
+      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/email-image.png',
+      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/email-image.png'
+    },
+    {
+      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step1-image.png',
+      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step1-image.png'
+    },
+    {
+      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step2-image.png',
+      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step2-image.png'
+    },
+    {
+      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step3-image.png',
+      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step3-image.png'
+    },
+    {
+      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step4-image.png',
+      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step4-image.png'
+    }
+  ];
+
+  let currentStep = 0;
+
+  function showStep(index) {
+    steps.forEach((step, i) => {
+      step.style.display = i === index ? 'block' : 'none';
+    });
+
+    if (index === steps.length - 1) {
+      submitBtnWrapper.style.display = 'block';
+    } else {
+      submitBtnWrapper.style.display = 'none';
+    }
+
+    const current = stepImages[index];
+    if (current) {
+      stepImageDesktop.src = current.desktop;
+      stepImageMobile.src = current.mobile;
+    }
+  }
+
+  nextBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      const currentFormStep = steps[currentStep];
+      const inputs = currentFormStep.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="hidden"]');
+
+      // ✅ Only check email format on step 0
+      if (currentStep === 0) {
+        const email = emailInput.value.trim();
+        const basicPattern = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
+        if (!basicPattern.test(email)) {
+          invalidEmailModal.style.display = 'flex';
+          return;
+        }
+      }
+
+      const isAnyFilled = Array.from(inputs).some(input => input.value.trim() !== '');
+
+      // ✅ Show modal if nothing is filled
+      if (!isAnyFilled && currentStep < steps.length - 1) {
+        document.getElementById('incomplete-step-modal').style.display = 'flex';
+        return;
+      }
+
+      if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    });
+  });
+
+  backBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    });
+  });
+
+  // Main Form Submission Logic (consolidated)
   const form = document.getElementById('mc-embedded-subscribe-form');
-  const modal = document.getElementById('incomplete-modal');
+  const modal = document.getElementById('incomplete-modal'); // General incomplete modal
   const goBackBtn = document.getElementById('go-back-btn');
   const confirmBtn = document.getElementById('confirm-submit-btn');
-  const emailInput = document.getElementById('mce-EMAIL');
-  const emailModal = document.getElementById('email-required-modal');
-  const dismissEmailModal = document.getElementById('dismiss-email-modal');
-  const invalidEmailModal = document.getElementById('email-invalid-modal'); // new modal
-  const dismissInvalidEmail = document.getElementById('dismiss-invalid-email'); // dismiss btn
-
+  
   let shouldBypassModal = false;
-
-  // Make currentStep accessible
-  window.currentStep = typeof currentStep !== 'undefined' ? currentStep : 0;
 
   form.addEventListener('submit', function (e) {
     if (shouldBypassModal) return;
 
     if (!emailInput.value.trim()) {
       e.preventDefault();
-      emailModal.style.display = 'flex';
+      emailRequiredModal.style.display = 'flex'; // Use emailRequiredModal here
       return;
     }
 
-    // ✅ Additional format check: basic email structure
-   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|co\.uk|net|org|gov|edu|info|biz|io)$/i;
+    // ✅ Additional format check: basic email structure (already done by next button, but good to have here too)
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|co\.uk|net|org|gov|edu|info|biz|io)$/i;
     if (!emailPattern.test(emailInput.value.trim())) {
       e.preventDefault();
       invalidEmailModal.style.display = 'flex';
@@ -1021,12 +1167,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     allRequiredInputs.forEach(selector => {
       const input = document.querySelector(selector);
-      if (!input || input.value.trim() === '') {
+      // Check if input exists AND its value is empty
+      if (input && input.value.trim() === '') {
         incomplete = true;
       }
     });
 
-    // ✅ Only show modal if NOT on the last step
+    // Only show modal if NOT on the last step (currentStep < steps.length - 1)
     if (incomplete && currentStep < steps.length - 1) {
       e.preventDefault();
       modal.style.display = 'flex';
@@ -1037,217 +1184,37 @@ document.addEventListener('DOMContentLoaded', function () {
   confirmBtn.addEventListener('click', () => {
     modal.style.display = 'none';
     shouldBypassModal = true;
-    form.requestSubmit();
+    form.requestSubmit(); // Programmatically submit the form
   });
 
-  dismissEmailModal.addEventListener('click', () => emailModal.style.display = 'none');
+  // Modal buttons for 'incomplete-step-modal'
+  const incompleteStepModal = document.getElementById('incomplete-step-modal'); // Corrected variable name
+  const incompleteBackBtn = document.getElementById('incomplete-back-btn');
+  const incompleteSkipBtn = document.getElementById('incomplete-skip-btn');
 
-  // ✅ New dismiss for invalid email modal
-  dismissInvalidEmail.addEventListener('click', () => invalidEmailModal.style.display = 'none');
-});
-</script>
-
-
-
-		
-		<script>
-document.querySelectorAll('#challenge-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-CHALLENGE').value = this.getAttribute('data-value');
-
-    // Visually indicate selection
-    document.querySelectorAll('#challenge-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-		
-		<script>
-document.querySelectorAll('#focus-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-FOCUS').value = this.getAttribute('data-value');
-
-    // Update visual state
-    document.querySelectorAll('#focus-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-		
-<script>
-document.querySelectorAll('#hardware-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-HARDWARE').value = this.getAttribute('data-value');
-
-    // Toggle active class
-    document.querySelectorAll('#hardware-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-		
-<script>
-document.querySelectorAll('#projects-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-PROJECTS').value = this.getAttribute('data-value');
-
-    // Visual active state
-    document.querySelectorAll('#projects-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-
-<script>
-document.querySelectorAll('#decision-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-DECISIONIN').value = this.getAttribute('data-value');
-
-    // Highlight selected
-    document.querySelectorAll('#decision-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-		
-<script>
-document.querySelectorAll('#matters-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-MATTERS').value = this.getAttribute('data-value');
-
-    // Update visual active state
-    document.querySelectorAll('#matters-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-		
-<script>
-document.querySelectorAll('#callnow-buttons .input-button').forEach(btn => {
-  btn.addEventListener('click', function () {
-    document.getElementById('hidden-CALLNOW').value = this.getAttribute('data-value');
-
-    // Update active style
-    document.querySelectorAll('#callnow-buttons .input-button').forEach(b => b.classList.remove('active'));
-    this.classList.add('active');
-  });
-});
-</script>
-		
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const steps = Array.from(document.querySelectorAll('.form-step'));
-  const nextBtns = document.querySelectorAll('.next-btn');
-  const backBtns = document.querySelectorAll('.back-btn');
-  const submitBtnWrapper = document.getElementById('mc-embedded-subscribe').closest('.clear');
-
-  const stepImage = document.getElementById('step-image'); // ✅ single image tag
-  const emailInput = document.getElementById('mce-EMAIL');
-  const invalidEmailModal = document.getElementById('email-invalid-modal');
-
-  const stepImages = [
-    {
-      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/email-image.png',
-      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/email-image.png'
-    },
-    {
-      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step1-image.png',
-      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step1-image.png'
-    },
-    {
-      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step2-image.png',
-      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step2-image.png'
-    },
-    {
-      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step3-image.png',
-      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step3-image.png'
-    },
-    {
-      desktop: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step4-image.png',
-      mobile: 'file:///Users/derricksmith/Downloads/IS%20Lead%20Gen%20Form%20/step4-image.png'
-    }
-  ];
-
-  let currentStep = 0;
-
-  function updateStepImage() {
-    const current = stepImages[currentStep];
-    if (current && stepImage) {
-      const isMobile = window.innerWidth < 769;
-      stepImage.src = isMobile ? current.mobile : current.desktop;
-    }
-  }
-
-  function showStep(index) {
-    steps.forEach((step, i) => {
-      step.style.display = i === index ? 'block' : 'none';
+  if (incompleteBackBtn) { // Added check for existence
+    incompleteBackBtn.addEventListener('click', () => {
+      incompleteStepModal.style.display = 'none';
     });
-
-    if (index === steps.length - 1) {
-      submitBtnWrapper.style.display = 'block';
-    } else {
-      submitBtnWrapper.style.display = 'none';
-    }
-
-    updateStepImage(); // ✅ load image for current step
   }
 
-  nextBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
-      const currentFormStep = steps[currentStep];
-      const inputs = currentFormStep.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], input[type="hidden"]');
-
-      if (currentStep === 0) {
-        const email = emailInput.value.trim();
-        const basicPattern = /^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/;
-        if (!basicPattern.test(email)) {
-          invalidEmailModal.style.display = 'flex';
-          return;
-        }
-      }
-
-      const isAnyFilled = Array.from(inputs).some(input => input.value.trim() !== '');
-
-      if (!isAnyFilled && currentStep < steps.length - 1) {
-        document.getElementById('incomplete-step-modal').style.display = 'flex';
-        return;
-      }
-
+  if (incompleteSkipBtn) { // Added check for existence
+    incompleteSkipBtn.addEventListener('click', () => {
+      incompleteStepModal.style.display = 'none';
       if (currentStep < steps.length - 1) {
         currentStep++;
         showStep(currentStep);
       }
     });
-  });
+  }
 
-  backBtns.forEach(btn => {
-    btn.addEventListener('click', function () {
-      if (currentStep > 0) {
-        currentStep--;
-        showStep(currentStep);
-      }
-    });
-  });
-
-  // Modal buttons
-  const incompleteModal = document.getElementById('incomplete-step-modal');
-  const backBtn = document.getElementById('incomplete-back-btn');
-  const skipBtn = document.getElementById('incomplete-skip-btn');
-
-  backBtn.addEventListener('click', () => {
-    incompleteModal.style.display = 'none';
-  });
-
-  skipBtn.addEventListener('click', () => {
-    incompleteModal.style.display = 'none';
-    if (currentStep < steps.length - 1) {
-      currentStep++;
-      showStep(currentStep);
-    }
-  });
-
-  // ✅ Update image on screen resize
-  window.addEventListener('resize', updateStepImage);
+  // Dismiss listeners for email modals
+  if (dismissEmailModal) { // Added check for existence
+    dismissEmailModal.addEventListener('click', () => emailRequiredModal.style.display = 'none');
+  }
+  if (dismissInvalidEmail) { // Added check for existence
+    dismissInvalidEmail.addEventListener('click', () => invalidEmailModal.style.display = 'none');
+  }
 
   // Show first step on load
   showStep(currentStep);
@@ -1257,7 +1224,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
 		
 		
 
@@ -1270,11 +1236,10 @@ document.addEventListener('DOMContentLoaded', function () {
 		
 		
 
-<!-- 🔔 Email Required Modal -->
 <div id="email-required-modal">
   <div class="modal-box">
     <h2>Email Address Required</h2>
-    <p>We need your email address to send you a copy of your options. We won't spam you.</p>
+    <p>We need your email address to send you a copy of your quote. We won't spam you.</p>
     <div class="modal-buttons">
       <button id="dismiss-email-modal" class="input-button" style="background-color: #53D8D8;">OK</button>
     </div>
@@ -1326,11 +1291,10 @@ document.addEventListener('DOMContentLoaded', function () {
 }
 </style>
 		
-		<!-- 🔔 Invalid Email Format Modal -->
-<div id="email-invalid-modal">
+		<div id="email-invalid-modal">
   <div class="modal-box">
     <h2>That email doesn’t look quite right</h2>
-    <p>Can you double-check it for us? We need it to send you tailored options.</p>
+    <p>Can you double-check it for us? We need it to send your quote.</p>
     <div class="modal-buttons">
       <button id="dismiss-invalid-email" class="input-button" style="background-color: #53D8D8;">OK</button>
     </div>
@@ -1384,10 +1348,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<!-- ✅ Incomplete Step Modal -->
 <div id="incomplete-step-modal">
   <div class="modal-box">
-    <h2>More information helps us give you better options</h2>
+    <h2>More Info Helps Us Quote Better</h2>
     <p>You haven’t answered this question. Would you like to go back or skip to the next one?</p>
     <div class="modal-buttons">
       <button id="incomplete-back-btn" class="input-button">Go Back</button>
@@ -1403,3 +1366,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 </body>
 </html>
+
