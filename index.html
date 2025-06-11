@@ -487,6 +487,56 @@ label {
 }
 </style>	
 
+	<style>
+.input-button-group {
+  display: flex;
+  flex-wrap: wrap; /* Allow buttons to wrap onto new lines */
+  justify-content: center; /* Center buttons horizontally */
+  gap: 12px;
+  margin-top: 8px;
+}
+.input-button {
+  padding: 8px 16px;
+  height: 60px;
+  margin: 2px;
+  margin-bottom: 8px; /* Adds vertical space between button rows */
+  background-color: #f5f5f5;
+  border: 3px solid white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  /* Desktop styles (default) */
+  width: auto; /* Buttons take natural width on desktop */
+}
+
+/* Mobile-specific styles for buttons */
+@media (max-width: 768px) {
+  .input-button-group {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center stacked buttons */
+  }
+  .input-button {
+    width: 80%; /* 80% width on mobile */
+    margin: 6px 0; /* Adjust vertical margin for stacked buttons */
+  }
+}
+
+/* Original styles for hover and active, kept for continuity */
+.input-button:hover {
+  background-color: #B5FFFF;
+}
+
+.input-button.active,
+.input-button:active {
+  background-color: #74E0E0;
+}
+</style>
+
 
 
 	
